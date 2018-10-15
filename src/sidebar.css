@@ -1,0 +1,53 @@
+/*
+ * Dieses Stylesheet enthält nur allgemeine Anweisungen, die sich auf die
+ * gesamte App auswirken. Hier dürfen keine Änderungen vorgenommen werden,
+ * die sich nur auf bestimmte Bereiche der Anwendung auswirken sollen.
+ *
+ * Damit @import funktioniert, muss die Anweisung vor allen anderen
+ * CSS-Anweisungen stehen. Dieses Stylesheet muss daher auch vor allen
+ * anderen importiert werden.
+ */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+
+}
+
+#sidebar {
+  position: fixed;
+  width: 200px;
+  heigth: 100%;
+  background: #151719;
+  left: -200px;
+
+}
+
+#sidebar.active {
+  left: 0px;
+  
+}
+
+#sidebar ul li {
+  color: rgba(230, 230, 230, 0.9);
+  list-style: none;
+  padding: 15px 10px;
+  border-bottom: 1px solid rgba(100, 100, 100, 0.3);
+}
+
+ #sidebar .toggle-button {
+   position: absolute;
+   left: 230px;
+   top: 20px;
+ }
+
+ #sidebar .toggle-button span {
+   display: block;
+   width: 30px;
+   height: 5px;
+   background: #151719;
+   margin: 5px 0px;
+
+ }
