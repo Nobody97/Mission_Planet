@@ -9,45 +9,30 @@
  */
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
-* {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-
+.sidenav {
+  height: 100%;
+  width: 20%;
+  background-color: #302E2E;
+  position: absolute;
 }
 
-#sidebar {
-  position: fixed;
-  width: 200px;
-  heigth: 100%;
-  background: #151719;
-  left: -200px;
-
+.sidenav li {
+  list-style-type: none;
+  padding: 2em;
 }
 
-#sidebar.active {
-  left: 0px;
-  
+.sidenav a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
 }
 
-#sidebar ul li {
-  color: rgba(230, 230, 230, 0.9);
-  list-style: none;
-  padding: 15px 10px;
-  border-bottom: 1px solid rgba(100, 100, 100, 0.3);
+#hidebtn {
+  float: right;
 }
 
- #sidebar .toggle-button {
-   position: absolute;
-   left: 230px;
-   top: 20px;
- }
-
- #sidebar .toggle-button span {
-   display: block;
-   width: 30px;
-   height: 5px;
-   background: #151719;
-   margin: 5px 0px;
-
- }
+#showbtn {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+}

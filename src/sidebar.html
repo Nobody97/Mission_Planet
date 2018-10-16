@@ -5,21 +5,30 @@
     <meta charset="utf-8" />
     <title>Mission Planet - Menü</title>
     <script src="sidebar.js"></script>
-    <link rel="stylesheet" href="sidebar.css" />
+    <link rel="stylesheet" type="text/css" href="sidebar.css" />
     <link rel="stylesheet" href="app.css" />
   </head>
 
   <body>
-    <div id="sidebar>">
-      <div class="toggle-button" onclick="toggleSidebar()">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+    <nav class="sidenav" id="sidebar">
+      <a href="#" id="hidebtn" onclick="hide()">&#9776;</a>
       <ul>
-        <li>Mein Konto</li>
-        <li>Aufträge</li>
-        <li>Partner</li>
+        <li><a href="#">Mein Konto</a></li>
+        <li><a href="#">Aufträge</a></li>
+        <li><a href="#">Partner</a></li>
+        <li><a href="#">Kontakt</a></li>
       </ul>
+    </nav>
+    <a href="#" id="showbtn" onclick="show">&#9776;</a>
+
+    <script type="text/javascript">
+      function hide() {
+        document.getElementsById('sidebar').style.display='none';
+      };
+
+      function show() {
+        document.getElementsById('sidebar').style.display='block';
+      };
+    </script>
   </body>
 </html>
