@@ -10,25 +10,30 @@
   </head>
 
   <body>
-    <nav class="sidenav" id="sidebar">
-      <a href="#" id="hidebtn" onclick="hide()">&#9776;</a>
-      <ul>
-        <li><a href="#">Mein Konto</a></li>
-        <li><a href="#">Aufträge</a></li>
-        <li><a href="#">Partner</a></li>
-        <li><a href="#">Kontakt</a></li>
-      </ul>
-    </nav>
-    <a href="#" id="showbtn" onclick="show">&#9776;</a>
+    <header>
+      <h1>Mission Planet</h1>
+    </header>
+    <!-- Section zur Einteilung der Bereiche -->
+    <section>
+      <!-- Sidebar mit Navigation -->
+      <nav class="sidenav" id="sidebar">
+        <a href="#" id="hidebtn" onclick="hide()">&#9776;</a>
+        <ul>
+          <li><a href="#">Mein Konto</a></li>
+          <li><a href="#">Aufträge</a></li>
+          <li><a href="#">Partner</a></li>
+          <li><a href="#">Kontakt</a></li>
+        </ul>
+      </nav>
+      <a href="#" id="showbtn" onclick="show">&#9776;</a>
 
-    <script type="text/javascript">
-      function hide() {
-        document.getElementsById('sidebar').style.display='none';
-      };
+      <!-- Hauptfenster der Anwendung -->
+      <main>
+        <img src="Logo.jpeg" class="Logo" />
+        
 
-      function show() {
-        document.getElementsById('sidebar').style.display='block';
-      };
-    </script>
+      </main>
+
+    </section>
   </body>
 </html>
