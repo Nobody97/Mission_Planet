@@ -9,84 +9,98 @@
  */
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
-header {
-  background-color: grey;
-
-    border-style: solid;
-    border-color: grey;
-    border-width: 0;
-    border-bottom-width: 2px;
-
-    padding: 0.5em;
-    color: white;
-    font-size: 95%;
+body {
+  margin: 0%;
+  padding: 0%;
+  font-family: arial;
+  background: #DAFFEF;
 }
 
-header h1 {
-  font-size: 150%;
-   text-align: center;
-   margin: 0;
-
-   color: green;
-   text-shadow: 1px 1px 1px grey;
-}
-
-.sidenav {
+.navbar {
+  position: absolute;
+  left: 0px;
+  width: 260px;
   height: 100%;
-  width: 20%;
-  background-color: #302E2E;
-  position: absolute;
-
+  background-color: black;
+  text-align: center;
+  transition: 0.800s ease;
 }
 
-.sidenav li {
+.navbar > .side-nav {
   list-style-type: none;
-  padding: 2em;
+  padding: 0;
+  margin: 0;
 }
 
-.sidenav a {
+.nav-item {
+  display: flex;
+}
+
+.nav-item > .nav-link {
   text-decoration: none;
-  color: white;
-  font-size: 20px;
+   color: whitesmoke;
+   font-size: 1.1em;
+   padding: 1em;
+   felx: 1;
 }
 
-#hidebtn {
-  float: right;
-}
-
-#showbtn {
-  text-decoration: none;
+.nav-item > .nav-link:hover {
+  background-color: whitesmoke;
   color: black;
-  font-size: 30px;
 }
 
-section h1 {
+.toggle-collapse {
+  float: right;
+  content: "";
+  outline: inherit;
+  border: 0px;
+  background: transparent;
+}
+
+/* Toggle Icon */
+.toggle-icon,
+.toggle-icon::before,
+.toggle-icon::after {
+   content: "";
+   width: 30px;
+   height: 3px;
+   position: fixed;
+   background-color: black;
+   border-radius:  2em;
+   border: 1px solid black;
+   cursor: pointer;
+   transition: 0.800s ease;
+   margin-top: 0.8em;
+}
+
+.toggle-icon::before {
   position: absolute;
+  left: -1px;
+  margin-top: -0.8em;
 }
 
-section img {
-    max-width: calc(100% - 1rem);
-    display: block;
-    margin-bottom: 1em;
-
-    background: white;
-    position: static;
+.toggle-icon::after {
+  position: absolute;
+  right: -1px;
+  margin-top: 0.6em;
+  width: 20px;
 }
 
+.toggle-icon {
+  width: 15px;
+}
 
-/** Große Bildschirme **/
-@media (min-width: 40em) {
-    html {
-        font-size: 2.3vmin;
-    }
+.show .toggle-icon::after {
+  width: 30px;
+}
 
-    section {
-        display: flex;
-    }
+.show .toggle-icon {
+  width:  30px;
+}
 
-    section img {
-        display: inline-block;
-        max-width: calc(50% - 2em);
-        margin: 0 1em 1em 0;
-    }
+.nav-item > .site-name {
+  text-decoration: none;
+   padding: 1.3em;
+   font-size: 2em;
+   color: whitesmoke;
 }

@@ -7,6 +7,8 @@
     <script src="sidebar.js"></script>
     <link rel="stylesheet" type="text/css" href="index.css" />
     <link rel="stylesheet" href="app.css" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
   </head>
 
   <body>
@@ -16,25 +18,21 @@
     <!-- Section zur Einteilung der Bereiche -->
     <section>
       <!-- Sidebar mit Navigation -->
-      <nav class="sidenav" id="sidebar">
-        <a href="#" id="hidebtn" onclick="hide()">&#9776;</a>
-        <ul>
-          <li><a href="#">Mein Konto</a></li>
-            <ul>
-              <li>Bearbeiten</li>
-              <li>Punktestand</li>
+      <div class="container">
+        <nav class="navbar" id="navID">
+          <button type="button" onclick="myFunction(this)" class="toggle-collapse" id="toggle-button">
+            <span class="toggle-icon">
+            </span>
+          </button>
+            <ul class="side-nav">
+              <li class="nav-item"><a href="#" class="site-name">Mission Planet</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Mein Konto</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Auftrag</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Partner</a></li>
             </ul>
-          <li><a href="#">Aufträge</a></li>
-            <ul>
-              <li>To Do</li>
-              <li>Neue</li>
-              <li>Erstellen</li>
-              <li>Bearbeiten</li>
-            </ul>
-          <li><a href="#">Partner</a></li>
-        </ul>
-      </nav>
-      <a href="#" id="showbtn" onclick="show">&#9776;</a>
+        </nav>
+      </div>
+
 
       <!-- Hauptfenster der Anwendung -->
       <main>
