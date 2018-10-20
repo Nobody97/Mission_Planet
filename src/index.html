@@ -1,13 +1,47 @@
 <!DOCTYPE html>
+
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <title>Mission Planet</title>
-        <script src="index.js"></script>
-        <link rel="stylesheet" href="index.css" />
-        <link rel="stylesheet" href="app.css" />
-    </head>
-    <body>
-        <h1>Hallo, Welt!</h1>
-    </body>
+  <head>
+    <meta charset="utf-8" />
+    <title>Mission Planet - Menü</title>
+    <script src="sidebar.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" href="app.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Mission Planet</h1>
+    </header>
+    <!-- Section zur Einteilung der Bereiche -->
+    <section>
+      <!-- Sidebar mit Navigation -->
+      <nav class="sidenav" id="sidebar">
+        <a href="#" id="hidebtn" onclick="hide()">&#9776;</a>
+        <ul>
+          <li><a href="#">Mein Konto</a></li>
+            <ul>
+              <li>Bearbeiten</li>
+              <li>Punktestand</li>
+            </ul>
+          <li><a href="#">Aufträge</a></li>
+            <ul>
+              <li>To Do</li>
+              <li>Neue</li>
+              <li>Erstellen</li>
+              <li>Bearbeiten</li>
+            </ul>
+          <li><a href="#">Partner</a></li>
+        </ul>
+      </nav>
+      <a href="#" id="showbtn" onclick="show">&#9776;</a>
+
+      <!-- Hauptfenster der Anwendung -->
+      <main>
+
+
+      </main>
+
+    </section>
+  </body>
 </html>

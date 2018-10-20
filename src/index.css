@@ -9,13 +9,84 @@
  */
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
-html, body {
-    margin: 0;
+header {
+  background-color: grey;
+
+    border-style: solid;
+    border-color: grey;
+    border-width: 0;
+    border-bottom-width: 2px;
+
+    padding: 0.5em;
+    color: white;
+    font-size: 95%;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 12pt;
+header h1 {
+  font-size: 150%;
+   text-align: center;
+   margin: 0;
 
-    background-color: rgb(212, 227, 237);
+   color: green;
+   text-shadow: 1px 1px 1px grey;
+}
+
+.sidenav {
+  height: 100%;
+  width: 20%;
+  background-color: #302E2E;
+  position: absolute;
+
+}
+
+.sidenav li {
+  list-style-type: none;
+  padding: 2em;
+}
+
+.sidenav a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+#hidebtn {
+  float: right;
+}
+
+#showbtn {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+}
+
+section h1 {
+  position: absolute;
+}
+
+section img {
+    max-width: calc(100% - 1rem);
+    display: block;
+    margin-bottom: 1em;
+
+    background: white;
+    position: static;
+}
+
+
+/** Große Bildschirme **/
+@media (min-width: 40em) {
+    html {
+        font-size: 2.3vmin;
+    }
+
+    section {
+        display: flex;
+    }
+
+    section img {
+        display: inline-block;
+        max-width: calc(50% - 2em);
+        margin: 0 1em 1em 0;
+    }
 }
