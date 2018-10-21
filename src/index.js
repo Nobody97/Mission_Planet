@@ -1,13 +1,7 @@
-function myFunction(e) {
-  e.classList.toggle("show");
+window.addEventListener("load",() => {
+    let toggleButton = document.getElementById('navID');
+    let meinKonto = getElementById('mein-konto');
+    let meinKontoBearbeiten = getElementById('meinKonto-bearbeiten');
+    let meinKontoPunktestand = getElementById('meinKonto-punktestand');
 
-  var element = document.getElementById('navID'),
-  Style = window.getComputedStyle(element),
-  right = Style.getPropertyValue("right");
-
-  if(right == "0px") {
-    element.style.rigth = "-260px";
-  }else {
-    element.style.left = "0px";
-  }
-}
+})

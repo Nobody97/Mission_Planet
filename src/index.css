@@ -16,6 +16,15 @@ body {
   background: #DAFFEF;
 }
 
+header {
+  background: #DAFFEF;
+  font-family: Helvetic;
+}
+
+header, h1 {
+  padding-left: 11em;
+}
+
 .navbar {
   position: absolute;
   left: 0px;
@@ -26,7 +35,7 @@ body {
   transition: 0.800s ease;
 }
 
-.navbar > .side-nav {
+.navbar > .side-item {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -36,7 +45,13 @@ body {
   display: flex;
 }
 
-.nav-item > .nav-link {
+.site-name {
+  color: whitesmoke;
+  text-decoration: none;
+
+}
+
+.nav-item {
   text-decoration: none;
    color: whitesmoke;
    font-size: 1.1em;
@@ -44,7 +59,7 @@ body {
    felx: 1;
 }
 
-.nav-item > .nav-link:hover {
+.nav-item:hover {
   background-color: whitesmoke;
   color: black;
 }
@@ -96,11 +111,4 @@ body {
 
 .show .toggle-icon {
   width:  30px;
-}
-
-.nav-item > .site-name {
-  text-decoration: none;
-   padding: 1.3em;
-   font-size: 2em;
-   color: whitesmoke;
 }

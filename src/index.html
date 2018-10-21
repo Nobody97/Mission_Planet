@@ -4,9 +4,8 @@
   <head>
     <meta charset="utf-8" />
     <title>Mission Planet - Menü</title>
-    <script src="sidebar.js"></script>
+    <script src="index.js"></script>
     <link rel="stylesheet" type="text/css" href="index.css" />
-    <link rel="stylesheet" href="app.css" />
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
   </head>
@@ -20,14 +19,23 @@
       <!-- Sidebar mit Navigation -->
       <div class="container">
         <nav class="navbar" id="navID">
-          <button type="button" onclick="myFunction(this)" class="toggle-collapse" id="toggle-button">
-            <span class="toggle-icon">
-            </span>
+          <button type="button" class="toggle-collapse" id="toggleButton">
+            <span class="toggle-icon"></span>
           </button>
             <ul class="side-nav">
-              <li class="nav-item"><a href="#" class="site-name">Mission Planet</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Mein Konto</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Auftrag</a></li>
+              <li class="site-name">Menü</li>
+              <li class="nav-item"><a href="#" id="mein-konto">Mein Konto</a></li>
+                <ul>
+                  <li><a class="nav-item2" href="#" id="meinKonto-bearbeiten">Bearbeiten</a></li>
+                  <li><a class="nav-item2" href="#" id="meinKonto-punktestand">Punktestand</a></li>
+                </ul>
+              <li class="nav-item"><a href="#" id="auftrag">Auftrag</a></li>
+                <ul>
+                  <li><a class="nav-item2" href="#" id="to-do">To Do</a></li>
+                  <li><a class="nav-item2" href="#" id="neue-aufträge">Neue</a></li>
+                  <li><a class="nav-item2" href="#" id="auftrag-erstellen">Erstellen</a></li>
+                  <li><a class="nav-item2" href="#" id="auftrag-bearbeiten">Bearbeiten</a></li>
+                </ul>
               <li class="nav-item"><a href="#" class="nav-link">Partner</a></li>
             </ul>
         </nav>
