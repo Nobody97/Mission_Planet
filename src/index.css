@@ -14,70 +14,17 @@ body {
   padding: 0%;
   font-family: arial;
   background: #DAFFEF;
+  background: url(Logo.jpeg);
 }
 
-header {
-  background: MediumSeaGreen;
-  font-family: Helvetic;
-}
-
-header, h1 {
-  padding-left: 11em;
-  text-align: left;
-}
-
-.navbar {
-  position: absolute;
-  left: 0px;
-  width: 260px;
-  height: 100%;
-  background-color: black;
-  text-align: center;
-  transition: 0.800s ease;
-}
-
-.navbar > .side-item {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.nav-item {
-  display: flex;
-}
-
-.site-name {
-  color: green;
-  list-style-type: none;
+.hauptfenster {
   text-align: center;
 }
 
-.nav-item {
-  text-decoration: none;
-   color: whitesmoke;
-   font-size: 1.1em;
-   padding: 1em;
-   felx: 1;
+#navID {
+  position:;
 }
 
-.nav-item:hover {
-  background-color: whitesmoke;
-  color: black;
-}
-
-.toggle-collapse {
-  float: right;
-  content: "";
-  outline: inherit;
-  border: 0px;
-  background: transparent;
-}
-
-.fenster-titel {
-  color: blue;
-  text-align: center;
-  background-color: none;
-}
 
 #logo {
   width: 100%;
